@@ -1,0 +1,732 @@
+/* font */
+@font-face {
+    font-family:'Metropolis Bold';
+    src:    url(Fonts/metropolisFontFamily/Metropolis-SemiBold.woff);
+}
+@font-face {
+    font-family:'Metropolis Thin';
+    src:    url(Fonts/metropolisFontFamily/Metropolis-ThinItalic.woff);
+}
+@font-face {
+    font-family:'Metropolis Med';
+    src:    url(Fonts/metropolisFontFamily/Metropolis-Medium.woff);
+}
+
+
+/* style */
+body {
+    width: 100%;
+    font-family: 'Metropolis Med', sans-serif;
+    background-image: url(img/bg2.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100vmax;
+    background-position-y: -7.2rem;
+    transition: 0.5s;
+    overflow-x: hidden;
+}
+nav{
+    font-family: 'Quicksand', sans-serif;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+nav.hide-nav{
+    width: 100%;
+    position: absolute;
+    z-index: 11;
+    top: -75px;
+    background-color: white;
+    transition: .5s;
+}
+nav.hide-nav .container::before{
+    content: '';
+    height: 50px;
+}
+nav.nav-transparent{
+    transition: .5s;
+    background-color: transparent;
+}
+nav.nav-transparent a, nav.hide-nav a{
+    margin: auto;
+    z-index: 12;
+}
+.navbar .nav-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -1px;
+    z-index: -1;
+    opacity: 1;
+}
+.navbar .navbar-brand, footer .left-side {
+    font-weight: 600;
+}
+.navbar .navbar-brand img{
+    width: 40px;
+    height: 40px;
+}
+.navbar .navbar-nav .nav-item{
+    margin-top: 0.2rem;
+    margin-left: 1.5rem;
+}
+.akhir-about{
+    position: absolute;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #00438b;
+    transition: 0.2s;
+    padding: 0.5rem .8rem;
+    border-bottom: 2px solid transparent;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    background-color: #c2dfff;
+    border-radius: 999px;
+    padding: 0.5rem .8rem;
+    transition: 0.3s;
+}
+section{
+    padding-top: 6rem;
+}
+.jumbotron{
+    width: 100%;
+    margin: -50px auto 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.text-container{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    transform: scale(1.1);
+    text-align: center;
+} 
+.register-btn {
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+}
+.text-container h1.judul{
+    font-size: 1.5rem;
+    font-family: "Metropolis Bold";
+}
+.text-container h1.sub-judul{
+    font-size: 3.5rem;
+    font-family: 'Metropolis Bold';
+}
+.text-container p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+}
+.register-btn{
+    font-family: 'Quicksand', sans-serif;
+    width: 120px;
+    border-radius: 2em;
+    margin: 1em auto;
+    border: 0;
+    background-color:#cc4f53;
+    border: 1px solid transparent;
+}
+.register-btn:hover{
+    color: #cc4f53;
+    background-color:white;
+    border: 1px solid #cc4f53;
+}
+.img-container{
+    width: 100%;
+    height: fit-content;
+}
+.jumbotron .img-container img.img{
+    position: relative;
+    top: 50px;
+    right: 40px;
+    height: 550px;
+}
+.judul-about{
+    font-weight:bold;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: larger;
+}
+#volunteer, #chart, footer{
+    background-color: #D2E7FE;
+}
+#course .card,#team .card{
+    transition: 0.2s;
+    border-radius: 1.2rem;
+    background-color: transparent;
+    border: transparent;
+}
+#testimoni .card{
+    transition: 0.2s;
+    border-radius: 1.2rem;
+    background-color: transparent;
+}
+#testimoni .testi-container .profile {
+    padding: 1rem;
+    margin-left: 1rem;
+}
+/* Margin Slick Slider */
+#testimoni .slick-slide {
+	margin: 15px 15px;
+}
+#testimoni .slick-list {
+	margin: 15px -15px;
+}
+/* image slick slider */
+#course .card img, #testimoni .card img, #team .card img{
+    padding:10px;
+}
+#course .card .card-body p, #testimoni .card .card-body p, #team .card .card-body p{
+    top: -10px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+}
+#course h3, h3.saintek{
+    width: max-content;
+    margin: 20px;
+}
+.img-testi{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+.img-testi a{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+.img-testi a p{
+    width: 100%;
+    color: black;
+    position: relative;
+    top: 1.3em;
+    right: 2em;
+}
+.img-testi img{
+    width: 4em;
+    display: flex;
+    align-items: flex-start;
+}
+.isi-testi{
+    width: 100%;
+    padding: 0 30px;
+    margin:0 auto;
+    text-align: left;
+}
+.card:hover{
+    margin-top: -5px;
+    transition: 0.2s;
+    box-shadow: 0px 0px 20px #8bb2df;
+}
+.grid{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.grid .text-container p{
+    margin-top: 4rem;
+    font-family: 'Quicksand', sans-serif;
+}
+.chart_wrap {
+    position: relative;
+    padding-bottom: 35%;
+    height: 0;
+    overflow:hidden;
+}
+.piechart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+}
+footer{
+    padding-top: 2rem;
+}
+footer p{
+    padding-top: 2rem;
+}
+footer .container{
+    width: 100%;
+    height: max-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+footer .right-side a{
+    margin: auto;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+footer .right-side{
+    margin-top: 20px;
+    width: max-content;
+    height: inherit;
+}
+footer .right-side img{
+    transform: scale(0.5);
+}
+footer .container .left-side{
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+footer .container .left-side .contact-us{
+    width: max-content;
+}
+footer .container .left-side .contact-us ul{
+    text-align:start;
+    margin-top: 25px;
+}
+footer .container .left-side .contact-us ul li{
+    color: #000;
+    list-style: none;
+    margin-bottom: 10px;
+}
+footer .container .left-side .contact-us a{
+    text-decoration: none;
+}
+footer .container .left-side .contact-us a:hover{
+    text-decoration: underline;
+}
+footer .container .left-side .contact-us a img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+footer .visit-us{
+    width: max-content;
+    height: max-content;
+}
+.visit-us img{
+    width: 75px;
+    height: 75px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+footer .container .left-side .contact-us a img:hover{
+    transform:rotate(-20deg);
+}
+.visit-us img:hover{
+    transform:rotateZ(20deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Timeline CSS CP Lepage */
+.timeline-container{
+    background-color: #fff;
+    color: #00438b;
+    height: 100%;
+}
+.circle{
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 50%;
+    background-color: #00438b;
+    color: #fff;
+    max-height: 50px;
+}
+.how-it-works.row{
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+}
+.how-it-works.row .col-2{
+    display: inline-flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+}
+.how-it-works.row .col-2::after{
+    content: '';
+    position: relative;
+    border-left: 3px solid #00438b;
+    z-index: 1;
+}
+.timeline div{
+    padding: 0;
+    height: 40px;
+}
+.timeline hr{
+    border-top: 3px solid #00438b;
+    margin: 0;
+    top: 17px;
+    position: relative;
+    opacity: 1;
+}
+.timeline .col-2{
+    display: flex;
+    overflow: hidden;
+}
+.timeline .corner{
+    border: 3.8px solid #00438b;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+}
+.timeline .top-right{
+    left: 50%;
+    top: -50%;
+}
+.timeline .top-left{
+    left: -50%;
+    top: -50%;
+}
+.timeline .left-bottom{
+    left: -50%;
+    top: calc(50% - 3px);
+}
+.timeline .right-bottom{
+    left: 50%;
+    top: calc(50% - 3px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width:384px) {
+    body {
+        background-size: 130vmax;
+        background-position-y:-90px;
+        overflow-x:hidden;
+    }
+    nav.nav-transparent{
+        width: 100%;
+        background-color: white;
+    }
+    .jumbotron{
+        width: 100%;
+        margin: 0 auto 0;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .grid{
+        width: 100%;
+        margin: 0 auto 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .course-saintek .container-card, .course-soshum .container-card, .course-ekstra .container-card, .testi-container .container-card, .team-container .container-card{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .jumbotron .img-container img.img{
+        position: static;
+        height: 250px;
+        margin-bottom: 30px;
+    }
+    .grid .img-container .img{
+        margin-top: -20px;
+        margin-bottom: 20px;
+        width: 75%;
+        height: 75%;
+    }
+    #testimoni .container-card img.profile {
+        width: 150px;
+        padding: 1rem;
+        margin: auto;
+        justify-content: center;
+    }
+    #testimoni .container-card .card-body{
+        margin-left: 1rem;
+    }
+    #testimoni .container-card .center{
+        text-align: center;
+    }
+    .navbar .nav-img{
+        width: 250%;
+        height: 100%;
+        position: absolute;
+        left: -10px;
+        z-index: -1;
+    }
+    .jumbotron .register-btn{
+        width: 100px;
+        font-size: .8em;
+        margin: 0 auto;
+        border-radius: 2em;
+        border: 0;
+        border: 1px solid transparent;
+        background-color: #cc4f53;
+    }
+    .chart_wrap {
+        transform: scale(.8);
+        position: relative;
+        top: -40px;
+        padding-bottom: 120%;
+        height: 0;
+        overflow:hidden;
+    }
+    footer .container{
+        width: 100%;
+        margin: 0 auto 0;
+        display: flex;
+        text-align: center;
+    }
+    footer .container .left-side{
+        width: 100%;
+        margin: 0 auto 0;
+        display: flex;
+        text-align: center;
+    }
+    footer .container .left-side .contact-us ul{
+        margin-left: -30px;
+        white-space: nowrap;
+    }
+} 
+@media screen and (max-width:666px) {
+    body {
+        background-size: 150vmax;
+        background-position-y:-155px;
+    }
+    nav.nav-transparent{
+        background-color: white;
+    }
+    .jumbotron{
+        width: 100%;
+        margin: 0 auto 0;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    #testimoni .testi-container .profile {
+        width: 60%;
+        padding: 1rem;
+        margin-left: 0;
+    }
+    #testimoni .testi-container .card-body{
+        margin-left: 1rem;
+    }
+    .grid{
+        width: 100%;
+        margin: 0 auto 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .jumbotron .img-container img.img{
+        position: static;
+        height: 250px;
+        margin-bottom: 30px;
+    }
+    .grid .img-container .img{
+        margin-top: -20px;
+        margin-bottom: 20px;
+        width: 75%;
+        height: 75%;
+    }
+    .navbar .nav-img{
+        width: 250%;
+        height: 100%;
+        position: absolute;
+        left: -20px;
+        z-index: -1;
+    }
+    .jumbotron .register-btn{
+        width: 100%;
+        margin-top: 0px;
+        border-radius: 2em;
+        border: 0;
+        border: 1px solid transparent;
+        background-color: #cc4f53;
+        align-items: center;
+    }
+    .chart_wrap {
+        transform: scale(.8);
+        position: relative;
+        top: -40px;
+        padding-bottom: 120%;
+        height: 0;
+        overflow:hidden;
+    }
+    footer .container{
+        width: 100%;
+        margin: 0 auto 0;
+        display: flex;
+        text-align: center;
+    }
+    footer .container .left-side{
+        width: 100%;
+        margin: 0 auto 0;
+        display: flex;
+        text-align: center;
+    }
+    footer .container .left-side .contact-us ul{
+        margin-left: -30px;
+        white-space: nowrap;
+    }
+}
+@media screen and (min-width: 667px) and (max-width:990px) {
+    body {
+        background-size: 120vmax;
+        background-position-y: -90px;
+    }
+    nav.nav-transparent{
+        background-color: white;
+    }
+    .jumbotron{
+        width: 100%;
+        margin: 50px auto 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    } 
+    .grid{
+        width: 100%;
+        margin: 0 auto 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+    #testimoni .testi-container .profile {
+        width: 80%;
+        padding: 1rem;
+        margin: auto;
+        justify-content: center;
+    }
+    #testimoni .testi-container .card-body{
+        margin-left: 1rem;
+    }
+    .jumbotron .img-container img.img{
+        position: relative;
+        height: 300px;
+    }
+    .grid .img-container .img{
+        width: 280px;
+        height: 280px;
+    }
+    .navbar .nav-img{
+        width: 250%;
+        height: 100%;
+        position: absolute;
+        left: -10px;
+        z-index: -1;
+    }
+    .jumbotron .register-btn{
+        width: 100%;
+        margin-top: 0px;
+        border-radius: 2em;
+        border: 0;
+        border: 1px solid transparent;
+        background-color: #cc4f53;
+        align-items: center;
+    }
+    .chart_wrap {
+        position: relative;
+        padding-bottom: 50%;
+        height: 0;
+        overflow:hidden;
+    }
+    footer .container{
+        width: 100%;
+        margin: 0 auto 0;
+        display: flex;
+        text-align: center;
+    }
+    footer .container .left-side{
+        width: 100%;
+        margin: 0 auto 0;
+        display: flex;
+        text-align: center;
+    }
+    footer .container .left-side .contact-us ul{
+        margin-left: -30px;
+        white-space: nowrap;
+    }
+}
+@media screen and (min-width: 991px) and (max-width:98%) {
+    body {
+        background-size: 120vmax;
+        background-position-x: -120px;
+    }
+    nav.nav-transparent{
+        background-color: white;
+    }
+    .jumbotron, 
+    .grid{
+        width: 100%;
+        margin: 0 auto 0;
+        display: block;
+        text-align: center;
+    }
+    .jumbotron .img-container .img, 
+    .grid .img-container .img{
+        width: 280px;
+        height: 280px;
+    }
+    .navbar .nav-img{
+        width: 250%;
+        height: 100%;
+        position: absolute;
+        left: -10px;
+        z-index: -1;
+    }
+    .jumbotron .register-btn{
+        width: 100%;
+        margin-top: 0px;
+        border-radius: 2em;
+        border: 0;
+        border: 1px solid transparent;
+        background-color: #cc4f53;
+        align-items: center;
+    }
+    .chart_wrap {
+        position: relative;
+        padding-bottom: 50%;
+        height: 0;
+        overflow:hidden;
+    }
+    footer .container{
+        width: 100%;
+        margin: 0 auto 0;
+        display: flex;
+        text-align: center;
+    }
+    footer .container .left-side{
+        width: 100%;
+        margin: 0 auto 0;
+        display: flex;
+        text-align: center;
+    }
+    footer .container .left-side .contact-us ul{
+        margin-left: -30px;
+        white-space: nowrap;
+    }
+}
