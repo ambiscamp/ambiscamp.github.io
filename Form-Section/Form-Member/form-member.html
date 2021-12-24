@@ -361,14 +361,24 @@
                 </div>
 
                 <div class="form">
-                    <label for="formFileMultiple" class="form-label">Bukti Follow dan Share <span class="clue">(silahkan
-                            upload banyak file sekaligus/dijadikan 1 folder)</span></label>
+                    <label for="formFileMultiple" class="form-label">Bukti Follow dan Share <span class="clue">(silahkan upload banyak file sekaligus/dijadikan 1 folder)</span></label>
                     <input class="form-control" type="file" name="FileUpload" id="formFileMultiple" required multiple>
+                </div>
+                
+                <div class="form">
+                    <label for="ta" id="text-area-label" class="label-animation"> Ceritain tentang diri kamu!<br><span class="clue">Bayangin kita baru kenal pertama kali nih, kamu tuh orang kayak apa sih? Latar belakang kamu apa? Minat kamu apa? Apa yang unik dari kamu? </span></label>
+                    <textarea name="ketertarikan" id="text-area" class="form-control input-animation" cols="30" rows="5" required></textarea>
                 </div>
 
                 <div class="form">
                     <label for="ta" id="text-area-label" class="label-animation"> Apa yang membuat kamu tertarik menjadi
                         Member Ambis Camp?</label>
+                    <textarea name="ketertarikan" id="text-area" class="form-control input-animation" cols="30" rows="5"
+                        required></textarea>
+                </div>
+
+                <div class="form">
+                    <label for="ta" id="text-area-label" class="label-animation"> Kenapa kamu yang harus terpilih untuk mengikuti program belajar ini?</label>
                     <textarea name="ketertarikan" id="text-area" class="form-control input-animation" cols="30" rows="5"
                         required></textarea>
                 </div>
@@ -385,8 +395,7 @@
             <div class="privacy form">
                 <h5><b>Catatan Privasi!</b></h5>
                 <p>Dengan menekan tombol 'Submit', kamu menyatakan bahwa data pribadi yang kamu isi benar, dan kamu
-                    setuju untuk memberikan data kamu untuk keperluan pendataan peserta Ambis Camp. Data dirimu dijamin
-                    hanya untuk keperluan program Ambis Camp saja dan tidak akan digunakan untuk hal lain di luar itu.
+                    setuju untuk memberikan data kamu untuk keperluan pendataan peserta Ambis Camp. Data dirimu dijamin hanya untuk keperluan program Ambis Camp saja dan tidak akan digunakan untuk hal lain di luar itu.
                 </p>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="setuju" id="invalidCheck" required
@@ -402,8 +411,7 @@
 
             <div class="form">
                 <div class="btn alert alert-dismissible fade show my-alert d-none" role="alert">
-                    <strong>Terima kasih!</strong> Data kamu sudah kami terima. Mohon tunggu pemberitahuan lebih lanjut
-                    melalui Whatsapp ya!
+                    <strong>Terima kasih!</strong> Data kamu sudah kami terima. Tim Ambis Camp akan menyeleksi member berdasarkan hasil wawancara yang telah kamu isi. Pengumuman peserta yang lolos akan dipublikasikan pada 04 Januari 2022 di website kesayangan kita ini ya!
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
                 <button type="submit" value="Upload" class="btn btn-kirim btn-success">Submit
