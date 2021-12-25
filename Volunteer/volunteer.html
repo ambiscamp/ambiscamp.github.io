@@ -1,396 +1,561 @@
-/* font */
-@font-face {
-    font-family:'Metropolis Bold';
-    src:    url(../Fonts/metropolisFontFamily/Metropolis-SemiBold.woff);
-}
-@font-face {
-    font-family:'Metropolis Thin';
-    src:    url(../Fonts/metropolisFontFamily/Metropolis-ThinItalic.woff);
-}
-@font-face {
-    font-family:'Metropolis Med';
-    src:    url(../Fonts/metropolisFontFamily/Metropolis-Medium.woff);
-}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../ico/ac logo/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../ico/ac logo/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../ico/ac logo/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../ico/ac logo/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../ico/ac logo/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../ico/ac logo/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../ico/ac logo/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../ico/ac logo/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../ico/ac logo/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../ico/ac logo/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../ico/ac logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../ico/ac logo/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../ico/ac logo/favicon-16x16.png">
+    <link rel="manifest" href="../ico/ac logo/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../ico/ac logo/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- cdnjs theme css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- cdnjs css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Ambis Camp</title>
+</head>
+
+<body id="home">
+    <!-- awal navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top p-2 mb-4 nav-transparent">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../ico/ac logo.png" alt="nav-logo-img"> AMBIS CAMP
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link button" href="../">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link button" href="../About-Us/about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link button" href="../Courses/courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link button active" href="#">Volunteer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-2 mb-4 hide-nav">
+        <div class="container">
+        </div>
+    </nav>
+    <!-- akhir nav -->
+    <!-- awal jumbotron -->
+    <section class="jumbotron">
+        <div class="img-container justify-content-center">
+            <img src="../img/header-pages/volunteer/bg.png" alt="Illustration" class="img">
+        </div>
+        <div class="text-container">
+            <h1 class="judul">Welcome to</h1>
+            <h1 class="sub-judul">Volunteer page!</h1>
+            <p>Di halaman ini ada informasi soal volunteer di Ambis Camp. Gimana cara masuknya, apa aja
+                syarat-syaratnya, benefitnya apa dan lain lain!
+            </p>
+        </div>
+    </section>
+    <!-- akhir jumbotron -->
+    <!-- awal requirements -->
+    <section id="requirements">
+        <div class="container">
+            <div class="row text-center mb-4" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col">
+                    <h1>Requirements</h1>
+                    <h5>Persyaratan</h5>
+                </div>
+            </div>
+            <div class="row isi-req">
+                <div class="col">
+                    <ul class="list-group">
+                        <li class="list-group-item" style="border: none">Berusia minimal 16 tahun</li>
+                        <li class="list-group-item" style="border: none">Bersedia secara sukarela</li>
+                        <li class="list-group-item" style="border: none">Tidak dalam masa sibuk</li>
+                        <li class="list-group-item" style="border: none">Menguasai divisi yang dipilih</li>
+                        <li class="list-group-item" style="border: none">Dapat berinteraksi dengan baik
+                            kepada member maupun admin lain</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-group">
+                        <li class="list-group-item" style="border: none">
+                            Memiliki rasa kekeluargaan</li>
+                        <li class="list-group-item" style="border: none">
+                            Niat dan bertanggung jawab</li>
+                        <li class="list-group-item" style="border: none">
+                            Dapat bekerja dalam tim</li>
+                        <li class="list-group-item" style="border: none">
+                            Bersedia memberi masukan untuk perkembangan grup</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <svg class="akhir-about" data-aos="fade-up" data-aos-duration="1000" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1"
+                d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#E4F1FF" fill-opacity="1"
+                d="M0,64L48,64C96,64,192,64,288,85.3C384,107,480,149,576,144C672,139,768,85,864,90.7C960,96,1056,160,1152,154.7C1248,149,1344,75,1392,37.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- akhir requirements -->
+    <!-- awal benefits -->
+    <section id="benefits">
+        <div class="container">
+            <div class="row text-center mb-4" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col">
+                    <h1>Benefits</h1>
+                    <h5>Keuntungan</h5>
+                </div>
+            </div>
+            <div class="content-3-2 container-xxl mx-auto  position-relative" style="font-family: 'Poppins', sans-serif">
+                <div class="d-flex flex-lg-row flex-column align-items-center">
+                    <!-- Left Column -->
+                    <div class="img-hero text-center justify-content-center d-flex">
+                        <img id="hero" class="img-fluid"
+                            src="../img/benefits.jpg"
+                            alt="" />
+                    </div>
+    
+                    <!-- Right Column -->
+                    <div
+                        class="right-column d-flex flex-column align-items-lg-start align-items-center text-lg-start text-center">
+                        <ul style="padding: 0; margin: 0">
+                            <li class="list-unstyled" style="margin-bottom: 1rem">
+                                <h5
+                                    class="d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                                    <span class="circle text-white d-flex align-items-center justify-content-center">
+                                        1
+                                    </span>
+                                    ID Card
+                                </h5>
+                            </li>
+                            <li class="list-unstyled" style="margin-bottom: 1rem">
+                                <h5
+                                    class="d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                                    <span class="circle text-white d-flex align-items-center justify-content-center">
+                                        2
+                                    </span>
+                                    e-certificate
+                                </h5>
+                            </li>
+                            <li class="list-unstyled" style="margin-bottom: 1rem">
+                                <h5
+                                    class="d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                                    <span class="circle text-white d-flex align-items-center justify-content-center">
+                                        3
+                                    </span>
+                                    Relasi pertemanan baru
+                                </h5>
+                            </li>
+                            <li class="list-unstyled" style="margin-bottom: 1rem">
+                                <h5
+                                    class="d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                                    <span class="circle text-white d-flex align-items-center justify-content-center">
+                                        4
+                                    </span>
+                                    Pengalaman unik dan seru
+                                </h5>
+                            </li>
+                            <li class="list-unstyled" style="margin-bottom: 3rem">
+                                <h5
+                                    class="d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                                    <span class="circle text-white d-flex align-items-center justify-content-center">
+                                        5
+                                    </span>
+                                    Insight tentang dunia pendidikan
+                                </h5>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg class="akhir-about" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#D2E7FE" fill-opacity="1"
+                d="M0,192L48,197.3C96,203,192,213,288,224C384,235,480,245,576,234.7C672,224,768,192,864,186.7C960,181,1056,203,1152,224C1248,245,1344,267,1392,277.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#E4F1FF" fill-opacity="1"
+                d="M0,256L48,218.7C96,181,192,107,288,74.7C384,43,480,53,576,69.3C672,85,768,107,864,128C960,149,1056,171,1152,160C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- akhir benefits -->
+    <!-- awal timeline -->
+    <section id="timeline" class="timeline-container">
+        <div class="container">
+            <div class="row mb-4" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col text-center">
+                    <h1 class="pb-2 pt-3 text-dark">How to join</h1>
+                </div>
+            </div>
+            <!-- section -->
+            <div class="row align-items-center how-it-works">
+                <div class="col-2 bottom text-center">
+                    <div class="circle">1</div>
+                </div>
+                <div class="col-6" data-aos="fade-in" data-aos-delay="300">
+                    <h3>Tekan tombol join us dibawah</h3>
+                </div>
+            </div>
+            <div class="row timeline">
+                <div class="col-2">
+                    <div class="corner top-right"></div>
+                </div>
+                <div class="col-8">
+                    <hr>
+                </div>
+                <div class="col-2">
+                    <div class="corner left-bottom"></div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-end how-it-works">
+                <div class="col-6 text-end" data-aos="fade-in" data-aos-delay="600">
+                    <h3>Pilih program volunteer</h3>
+                </div>
+                <div class="col-2 text-center full">
+                    <div class="circle">2</div>
+                </div>
+            </div>
+            <div class="row timeline">
+                <div class="col-2">
+                    <div class="corner right-bottom"></div>
+                </div>
+                <div class="col-8">
+                    <hr>
+                </div>
+                <div class="col-2">
+                    <div class="corner top-left"></div>
+                </div>
+            </div>
+            <div class="row align-items-center how-it-works">
+                <div class="col-2 text-center">
+                    <div class="circle">3</div>
+                </div>
+                <div class="col-6" data-aos="fade-in" data-aos-delay="900">
+                    <h3>Isi data diri dengan baik dan benar</h3>
+                </div>
+            </div>
+            <div class="row timeline">
+                <div class="col-2">
+                    <div class="corner top-right"></div>
+                </div>
+                <div class="col-8">
+                    <hr>
+                </div>
+                <div class="col-2">
+                    <div class="corner left-bottom"></div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-end how-it-works">
+                <div class="col-6 text-end" data-aos="fade-in" data-aos-delay="1200">
+                    <h3>Isi sesi wawancara dengan penuh niat dan keseriusan</h3>
+                </div>
+                <div class="col-2 text-center full">
+                    <div class="circle">4</div>
+                </div>
+            </div>
+        </div>
+        <svg class="akhir-about" data-aos="fade-up" data-aos-duration="1000" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1"
+                d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#E4F1FF" fill-opacity="1"
+                d="M0,64L48,64C96,64,192,64,288,85.3C384,107,480,149,576,144C672,139,768,85,864,90.7C960,96,1056,160,1152,154.7C1248,149,1344,75,1392,37.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- akhir timeline -->
+    <!-- awal testimoni -->
+    <section id="testimoni">
+        <div class="container">
+            <div class="row text-center mb-4" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col">
+                    <h1>Apa kata mereka?</h1>
+                </div>
+            </div>
+            <div class="testi-container">
+                <div class="row justify-content-center slider-card-testi mb-4 text-center container-card"
+                    data-aos="zoom-in-right" data-aos-duration="1000">
+                    <div class="card col-4 mb-4">
+                        <div class="mb-3" style="max-width: 540px">
+                            <div class="row g-0 ">
+                                <div class="col-md-4">
+                                    <img src="../img/Testi/violin.jpeg" class="img-fluid rounded-circle profile"
+                                        alt="Testi Image" />
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start">Violin Mersi Giovani</h5>
+                                        <p class="card-text text-start"><small class="text-muted">Admin</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="text-start isi-testi">
+                                    <p>Pastinya AC itu seruu buanget dah, bisa kenal banyak org dari beda tempat trus
+                                        jga lebi banyak
+                                        belajar hal baru. Cuma ya makin tambah stress dong, kadang ga bisa bagi waktu
+                                        tapi yak stressnya
+                                        dinikmati aj wuenak soalnya awokaoakoa. Tapi yg paling lejen waktu ketemu temen
+                                        yg umurnya jauh di
+                                        bawah aku kan tapi ilmunya wuih mengalahkan, kadang itu memotivasi diri sendiri
+                                        tapi yak seringnya
+                                        menciutkan mental wkwk boong yak bestie. Intinya AC itu keren dah apalagi isi
+                                        dalemnya, ACers yg
+                                        ketceh ketceh , baik hati, ramah, cuantik dan guanteng, terutama otaknya glowing
+                                        beut bestie membuat
+                                        para ambiz terpana ckck okede kepanjangan Papay 😀</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-4 mb-4">
+                        <div class="mb-3" style="max-width: 540px">
+                            <div class="row g-0 ">
+                                <div class="col-md-4">
+                                    <img src="../img/Testi/cahaya.jpeg" class="img-fluid rounded-circle profile"
+                                        alt="Testi Image" />
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body text-start">
+                                        <h5 class="card-title">Cahaya Daniella Queenimas</h5>
+                                        <p class="card-text"><small class="text-muted">Admin</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="text-start isi-testi">
+                                    <p>Tentu saja saya senang karena status saya yang awalnya sok sibuk jadi sibuk
+                                        beneran sampe gatau deh,
+                                        tapi ini asyik. Orang orangnya sangat menyenangkan sampai saya terjungkal ke
+                                        belakang akibat
+                                        kekuatan dari kebahagiaan ini. Ya intinya Ini grup bermanfaat jadi nilai saya
+                                        juga naik, terus bisa
+                                        nyalurin minat bakat juga. Adminnya santuy santuy tapi pada respectful kok.
+                                        Intinya ini....Ini grup
+                                        yang luar biasa deh. Keren keren, salut buat semua admin dan anggota nya👍</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-4 mb-4">
+                        <div class="mb-3" style="max-width: 540px">
+                            <div class="row g-0 ">
+                                <div class="col-md-4">
+                                    <img src="../img/Testi/frila.jpeg" class="img-fluid rounded-circle profile"
+                                        alt="Testi Image" />
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body text-start">
+                                        <h5 class="card-title">Frila Monica Kartika Sari</h5>
+                                        <p class="card-text"><small class="text-muted">Admin</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="text-start isi-testi">
+                                    <p>Alhamdulillah seneng banget bisa menjadi bagian dari Ambis Camp. Di sini aku bisa
+                                        kembali membagikan
+                                        ilmu pengetahuan yang kutahu dan juga sharing-sharing ilmu pengetahuan juga.
+                                        Dengan adanya media
+                                        yang positively seperti ini, saya berharap dan percaya Ambis Camp bisa menjadi
+                                        bagian dari usaha
+                                        pengedukasian Indonesia.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-4 mb-4">
+                        <div class="mb-3" style="max-width: 540px">
+                            <div class="row g-0 ">
+                                <div class="col-md-4">
+                                    <img src="../img/Testi/najwa.jpeg" class="img-fluid rounded-circle profile"
+                                        alt="Testi Image" />
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body text-start">
+                                        <h5 class="card-title">Syarifah Najwa Zain</h5>
+                                        <p class="card-text"><small class="text-muted">Admin</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="text-start isi-testi">
+                                    <p>Rekan rekan saya di Ambis camp sangatlah menyenangkan, mereka orang yg kocak dan
+                                        pandai meramaikan
+                                        suasana. Lalu, dari sistemnya sudah bagus</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-4 mb-4">
+                        <div class="mb-3" style="max-width: 540px">
+                            <div class="row g-0 ">
+                                <div class="col-md-4">
+                                    <img src="../img/Testi/talyta.jpeg" class="img-fluid rounded-circle profile"
+                                        alt="Testi Image" />
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body text-start">
+                                        <h5 class="card-title">Talyta Aprilya Irawan</h5>
+                                        <p class="card-text"><small class="text-muted">Admin</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="text-start isi-testi">
+                                    <p>Seru dong, asik bgt! Nambah ilmu bgt jugaa. Happy bgt selama ngadmin ngga pernah
+                                        terbebani. Chel baik
+                                        bgt, love Chel!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-4 mb-4">
+                        <div class="mb-3" style="max-width: 540px">
+                            <div class="row g-0 ">
+                                <div class="col-md-4">
+                                    <img src="../img/Testi/raihan.jpeg" class="img-fluid rounded-circle profile"
+                                        alt="Testi Image" />
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body text-start">
+                                        <h5 class="card-title">Raihan Nur Pratama</h5>
+                                        <p class="card-text"><small class="text-muted">Admin</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="text-start isi-testi">
+                                    <p>Alhamdulillah nyaman gara gara ada dia :v</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg class="akhir-about" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#D2E7FE" fill-opacity="1"
+                d="M0,192L48,197.3C96,203,192,213,288,224C384,235,480,245,576,234.7C672,224,768,192,864,186.7C960,181,1056,203,1152,224C1248,245,1344,267,1392,277.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#E4F1FF" fill-opacity="1"
+                d="M0,256L48,218.7C96,181,192,107,288,74.7C384,43,480,53,576,69.3C672,85,768,107,864,128C960,149,1056,171,1152,160C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- akhir testimoni -->
+    <!-- awal join -->
+    <section id="join">
+        <div class="container">
+            <div class="row mb-4" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col text-center">
+                    <h3>Ingin tau jabatan apa yang lagi dibuka? Yuk klik Join Us untuk mengetahui
+                        semua jabatan yang sedang kita buka.</h3>
+                    <a href="../Landing-Page/form-main.html"><button class="btn btn-success register-btn">Join Us
+                        </button></a>
+                </div>
+            </div>
+        </div>
+        <svg class="akhir-about" data-aos="fade-up" data-aos-duration="1000" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1"
+                d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#E4F1FF" fill-opacity="1"
+                d="M0,64L48,64C96,64,192,64,288,85.3C384,107,480,149,576,144C672,139,768,85,864,90.7C960,96,1056,160,1152,154.7C1248,149,1344,75,1392,37.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- akhir join -->
+    <!-- awal footer -->
+    <footer class="text-black text-center pb-3">
+        <div class="row justify-content-evenly container">
+            <div class="right-side">
+                <a class="navbar-brand" href="#">
+                    <img src="../ico/ac logo.png" width="96px" alt="nav-logo-img"> AMBIS CAMP
+                </a>
+            </div>
+            <div class="row left-side justify-content-evenly">
+                <div class="contact-us">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <a href="http://wa.me/62881023795681" target="_blank">
+                            <li><img src="../ico/Whatsapp.png" alt="nav-logo-img">+62-881-0237-95681 (Cheel)</li>
+                        </a>
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfrKsTngzQBRmfswhPnBrCCjbhsBxHqctXlqPMqnVDcfdkWLpvKxcRmMFJhgqbjMCPfwzg"
+                            target="_blank">
+                            <li><img src="../ico/Gmail.png" alt="nav-logo-img">ambiscamp.ofc@gmail.com</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="visit-us">
+                    <h2>Visit Us</h2>
+                    <a href="http://instagram.com/ambis_camp" target="_blank"><img src="../ico/Instagram.png"
+                            alt="nav-logo-img"></a>
+                    <a href="http://twitter.com/ambiscamp" target="_blank"><img src="../ico/Twitter.png"
+                            alt="nav-logo-img"></a>
+                    <a href="https://anchor.fm/ambiscamp" target="_blank"><img src="../ico/Spotify.png"
+                            alt="nav-logo-img"></a>
+                    <a href="https://t.me/ambiscamp" target="_blank"><img src="../ico/Telegram.png"
+                            alt="nav-logo-img"></a>
+                </div>
+            </div>
+        </div>
+        <p>Created with <i class="bi bi-heart-fill"></i> by Ambis Camp.<br> © 2021 Ambis Camp. All rights reserved</p>
+
+    </footer>
 
 
-/* style */
-body {
-    width: 100%;
-    font-family: 'Metropolis Med', sans-serif;
-    transition: 0.5s;
-    overflow-x: hidden;
-}
-nav{
-    font-family: 'Quicksand', sans-serif;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-}
-nav.hide-nav{
-    width: 100%;
-    position: absolute;
-    z-index: 11;
-    top: -75px;
-    background-color: white;
-    transition: .5s;
-}
-nav.hide-nav .container::before{
-    content: '';
-    height: 50px;
-}
-nav.nav-transparent{
-    transition: .5s;
-    background-color: transparent;
-}
-nav.nav-transparent a, nav.hide-nav a{
-    margin: auto;
-    z-index: 12;
-}
-.navbar .nav-img{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: -1px;
-    z-index: -1;
-    opacity: 1;
-}
-.navbar .navbar-brand, footer .left-side {
-    font-weight: 600;
-}
-.navbar .navbar-brand img{
-    width: 40px;
-    height: 40px;
-}
-.navbar .navbar-nav .nav-item{
-    margin-top: 0.2rem;
-    margin-left: 1.5rem;
-}
-.akhir-about{
-    position: absolute;
-}
-.navbar .navbar-nav .nav-item .nav-link {
-    color: #00438b;
-    transition: 0.2s;
-    padding: 0.5rem .8rem;
-    border-bottom: 2px solid transparent;
-}
-.navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item .nav-link.active {
-    background-color: #c2dfff;
-    border-radius: 999px;
-    padding: 0.5rem .8rem;
-    transition: 0.3s;
-}
-section{
-    padding-top: 5rem;
-}
-.jumbotron{
-    width: 100%;
-    height: 100vh;
-    background-image: url(../img/header-pages/bg.png);
-    margin: auto;
-    padding: 80px 0 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-bottom-left-radius: 5rem;
-    border-bottom-right-radius: 5rem;
-}
-.text-container{
-    width: 80%;
-    height: fit-content;
-    margin: 150px 4rem 0 0;
-    text-align: center;
-} 
-.text-container h1.judul{
-    font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-}
-.text-container h1.sub-judul{
-    font-size: 3.5rem;
-    font-family: 'Poppins', sans-serif;
-}
-.text-container p{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.1rem;
-    margin-top: 2rem;
-}
-.img-container{
-    width: 100%;
-    height: fit-content;
-}
-.jumbotron .img-container img.img{
-    position: relative;
-    bottom: 2rem;
-    left: 4rem;
-    height: 600px;
-}
-.jumbotron, #timeline, #join {
-    background-color: #D2E7FE;
-}
-#testimoni .card, #requirements .card{
-    transition: 0.2s;
-    border-radius: 1.2rem;
-    background-color: transparent;
-}
-
-/* requirements css */
-#requirements ul li::before{
-    content: "";
-    background-size: contain;
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    position: relative;
-    top: 0.1rem;
-    margin-right: 0.2rem;
-    background-image: url(../img/check.png);
-}
-#requirements .card{
-    border: transparent;
-    width: 70%;
-    display: flex;
-    flex-wrap: nowrap;
-    max-height: 80px;
-    margin:0 auto;
-    padding: 0;
-}
-#requirements .card p{
-    display: inline;
-    white-space: pre-wrap;
-    top: -10px;
-    font-weight: 500;
-}
-#testimoni .testi-container .profile {
-    padding: 1rem;
-    margin-left: 1rem;
-}
-/* Margin Slick Slider */
-#testimoni .container .slick-slide {
-	margin: 15px 15px;
-}
-#testimoni .container .slick-list {
-	margin: 15px -15px;
-}
-/* image slick slider */
-#testimoni .card img{
-    padding:10px;
-}
-#testimoni .card .card-body p{
-    top: -10px;
-    font-weight: 500;
-    font-family: 'Quicksand', sans-serif;
-}
-
-
-/* benefits css */
-.content-3-2 .btn:focus,
-.content-3-2 .btn:active {
-    outline: none !important;
-}
-
-.content-3-2 {
-    padding: 5rem 2rem;
-}
-
-.content-3-2 .img-hero {
-    width: 100%;
-    margin-bottom: 3rem;
-}
-
-.content-3-2 .right-column {
-    width: 100%;
-}
-
-.content-3-2 .title-text {
-    font: 600 1.875rem/2.25rem Poppins, sans-serif;
-    margin-bottom: 2.5rem;
-    letter-spacing: -0.025em;
-    color: #121212;
-}
-
-.content-3-2 .title-caption {
-    font: 500 1.5rem/2rem Poppins, sans-serif;
-    margin-bottom: 1.25rem;
-    color: #121212;
-}
-
-.content-3-2 .circle {
-    font: 500 1.25rem/1.75rem Poppins, sans-serif;
-    height: 3rem;
-    width: 3rem;
-    margin-bottom: 1.25rem;
-    border-radius: 9999px;
-    background-color: #27c499;
-}
-
-.content-3-2 .text-caption {
-    font: 400 1rem/1.75rem Poppins, sans-serif;
-    letter-spacing: 0.025em;
-    color: #565656;
-}
-
-.content-3-2 .btn-learn {
-    font: 600 1rem/1.5rem Poppins, sans-serif;
-    padding: 1rem 2.5rem;
-    background-color: #27c499;
-    transition: 0.3s;
-    letter-spacing: 0.025em;
-    border-radius: 0.75rem;
-}
-
-.content-3-2 .btn:hover {
-    background-color: #45dbb2;
-    transition: 0.3s;
-}
-
-@media (min-width: 768px) {
-    .content-3-2 .title-text {
-        font: 600 2.25rem/2.5rem Poppins, sans-serif;
-    }
-}
-
-@media (min-width: 992px) {
-    .content-3-2 .img-hero {
-        width: 50%;
-        margin-bottom: 0;
-    }
-
-    .content-3-2 .right-column {
-        width: 50%;
-    }
-
-    .content-3-2 .circle {
-        margin-right: 1.25rem;
-        margin-bottom: 0;
-    }
-}
-
-
-.img-testi{
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    margin-top: 10px;
-}
-.img-testi a{
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    margin-left: 15px;
-}
-.img-testi a p{
-    width: 100%;
-    color: black;
-    position: relative;
-    top: 1.3em;
-    right: 2em;
-}
-.img-testi img{
-    width: 4em;
-    display: flex;
-    align-items: flex-start;
-}
-.isi-testi{
-    width: 100%;
-    padding: 0 30px;
-    margin:0 auto;
-    text-align: left;
-}
-#testimoni .card:hover{
-    margin-top: -5px;
-    transition: 0.2s;
-    box-shadow: 0px 0px 20px #8bb2df;
-} 
-.register-btn {
-    width: 100%;
-    height: fit-content;
-    margin: auto;
-    text-align: center;
-}
-.register-btn{
-    font-family: 'Quicksand', sans-serif;
-    width: 120px;
-    border-radius: 2em;
-    margin: 1em auto;
-    border: 0;
-    background-color:#cc4f53;
-    border: 1px solid transparent;
-}
-.register-btn:hover{
-    color: #cc4f53;
-    background-color:white;
-    border: 1px solid #cc4f53;
-}
-footer{
-    padding-top: 2rem;
-}
-footer p{
-    padding-top: 2rem;
-}
-footer .container{
-    width: 100%;
-    height: max-content;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-footer .right-side a{
-    margin: auto;
-    color: #000;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-footer .right-side{
-    margin-top: 20px;
-    width: max-content;
-    height: inherit;
-}
-footer .right-side img, #requirements .card img{
-    transform: scale(0.5);
-}
-footer .container .left-side{
-    width: 100%;
-    height: max-content;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-footer .container .left-side .contact-us{
-    width: max-content;
-}
-footer .container .left-side .contact-us ul{
-    text-align:start;
-    margin-top: 25px;
-}
-footer .container .left-side .contact-us ul li{
-    color: #000;
-    list-style: none;
-    margin-bottom: 10px;
-}
-footer .container .left-side .contact-us a{
-    text-decoration: none;
-}
-footer .container .left-side .contact-us a:hover{
-    text-decoration: underline;
-}
-footer .container .left-side .contact-us a img{
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
-    transition: 0.5s;
-}
-footer .visit-us{
-    width: max-content;
-    height: max-content;
-}
-.visit-us img{
-    width: 54px;
-    margin-top: 20px;
-    transition: 0.5s;
-}
-footer .container .left-side .contact-us a img:hover{
-    transform:rotate(-20deg);
-}
-.visit-us img:hover{
-    transform:rotateZ(20deg);
-}
 
 
 
@@ -398,286 +563,65 @@ footer .container .left-side .contact-us a img:hover{
 
 
 
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- js AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../script.js"></script>
+    <!-- jquery script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- cdnjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    AOS.init({
+        once: true,
+    });
+    </script>
+    <script type="text/javascript">
+    $('.slider-card-testi').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false
+                }
+            }
+        ]
+    });
+    </script>
+    </script>
+</body>
 
-/* Timeline CSS CP Lepage */
-.timeline-container{
-    background-color: #fff;
-    color: #00438b;
-    height: 100%;
-}
-.circle{
-    font-weight: bold;
-    padding: 12px 20px;
-    border-radius: 50%;
-    background-color: #00438b;
-    color: #fff;
-    max-height: 50px;
-}
-.how-it-works.row{
-    display: flex;
-    font-family: 'Quicksand', sans-serif;
-}
-.how-it-works.row .col-2{
-    display: inline-flex;
-    align-self: stretch;
-    align-items: center;
-    justify-content: center;
-}
-.how-it-works.row .col-2::after{
-    content: '';
-    position: relative;
-    border-left: 3px solid #00438b;
-    z-index: 1;
-}
-.timeline div{
-    padding: 0;
-    height: 40px;
-}
-.timeline hr{
-    border-top: 3px solid #00438b;
-    margin: 0;
-    top: 17px;
-    position: relative;
-    opacity: 1;
-}
-.timeline .col-2{
-    display: flex;
-    overflow: hidden;
-}
-.timeline .corner{
-    border: 3.8px solid #00438b;
-    width: 100%;
-    position: relative;
-    border-radius: 15px;
-}
-.timeline .top-right{
-    left: 50%;
-    top: -50%;
-}
-.timeline .top-left{
-    left: -50%;
-    top: -50%;
-}
-.timeline .left-bottom{
-    left: -50%;
-    top: calc(50% - 3px);
-}
-.timeline .right-bottom{
-    left: 50%;
-    top: calc(50% - 3px);
-}
-
-
-/* 
-.button {
-    display: inline-block;
-    border-radius: 10rem;
-    color: #fff;
-    letter-spacing: 0.15rem;
-    transition: all 0.3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-  }
-  .button:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10rem;
-    z-index: -2;
-  }
-  .button:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: #cde3fc;
-    transition: all 0.3s;
-    border-radius: 10rem;
-    z-index: -1;
-  }
-  .button:hover {
-    color: #fff;
-  }
-  .button:hover:before {
-    width: 100%;
-  } */
-  
-
-
-
-
-
-
-
-
-
-/* Responsive */
-@media screen and (max-width:576px) {
-    body{
-        overflow-x: hidden;
-    }
-    nav.nav-transparent{
-        background-color: white;
-    }
-    .navbar .nav-img{
-        width: 250%;
-        height: 100%;
-        position: absolute;
-        left: -20px;
-        z-index: -1;
-    }
-    .jumbotron{
-        width: 100%;
-        height: fit-content;
-        margin: 0 auto 0;
-        display: flex;
-        flex-direction:column-reverse;
-        text-align: center;
-        border-bottom-left-radius: 1rem;
-        border-bottom-right-radius: 1rem;
-    }
-    .text-container{
-        width: 80%;
-        height: fit-content;
-        margin: 0px auto;
-        text-align: center;
-        z-index: 2;
-    } 
-    .img-container{
-        width: 100%;
-        height: fit-content;
-    }
-    .jumbotron .img-container img.img{
-        position: relative;
-        left: 0;
-        right: 0;
-        height: 200px;
-        margin: 0 auto 10px;
-    }
-    .testi-container .container-card{
-        width: 100%;
-        margin: 0 auto;
-        padding: 0;
-    }
-    #testimoni .container-card img.profile {
-        width: 150px;
-        padding: 1rem;
-        margin: auto;
-        justify-content: center;
-    }
-    #testimoni .container-card .card-body{
-        margin-left: 1rem;
-    }
-    #testimoni .container-card .center{
-        text-align: center;
-    }
-    .register-btn{
-        width: 100px;
-        font-size: .8em;
-        margin: 0 auto;
-        border-radius: 2em;
-        border: 0;
-        border: 1px solid transparent;
-        background-color: #cc4f53;
-    }
-    footer .container{
-        width: 100%;
-        margin: 0 auto 0;
-        display: flex;
-        text-align: center;
-    }
-    footer .container .left-side{
-        width: 100%;
-        margin: 0 auto 0;
-        display: flex;
-        text-align: center;
-    }
-    footer .container .left-side .contact-us ul{
-        margin-left: -30px;
-        white-space: nowrap;
-    }
-}
-@media screen and (max-width:768px) {
-    nav.nav-transparent{
-        background-color: white;
-    }
-    .navbar .nav-img{
-        width: 250%;
-        height: 100%;
-        position: absolute;
-        left: -10px;
-        z-index: -1;
-    }
-    .jumbotron{
-        width: 100%;
-        height: fit-content;
-        margin: 0 auto 0;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        border-bottom-left-radius: 1rem;
-        border-bottom-right-radius: 1rem;
-    }
-    .text-container{
-        width: 80%;
-        height: fit-content;
-        margin: 0px auto;
-        text-align: center;
-        z-index: 2;
-    } 
-    .img-container{
-        width: 100%;
-        height: fit-content;
-    }
-    .jumbotron .img-container img.img{
-        position: relative;
-        right: 20px;
-        height: 300px;
-        margin: 0 auto 10px;
-    }
-    .testi-container .container-card{
-        width: 100%;
-        margin: 0 auto;
-        padding: 0;
-    }
-    #testimoni .testi-container .profile {
-        width: 80%;
-        padding: 1rem;
-        margin: auto;
-        justify-content: center;
-    }
-    #testimoni .testi-container .card-body{
-        margin-left: 1rem;
-    }
-    .register-btn{
-        width: 100%;
-        margin-top: 0px;
-        border-radius: 2em;
-        border: 0;
-        border: 1px solid transparent;
-        background-color: #cc4f53;
-        align-items: center;
-    }
-    footer .container{
-        width: 100%;
-        margin: 0 auto 0;
-        display: flex;
-        text-align: center;
-    }
-    footer .container .left-side{
-        width: 100%;
-        margin: 0 auto 0;
-        display: flex;
-        text-align: center;
-    }
-    footer .container .left-side .contact-us ul{
-        margin-left: -30px;
-        white-space: nowrap;
-    }
-}
+</html>
