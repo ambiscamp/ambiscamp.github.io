@@ -67,6 +67,22 @@ nav.nav-transparent a, nav.hide-nav a{
 .akhir-about{
     position: absolute;
 }
+.my-alert{
+    width: 50%;
+    align-items: center;
+    margin: -150px auto 0 ;
+    background-color: #e0edff;
+    border: 5px solid #cde4fd;
+}
+span{
+    font-size: 1.5rem;
+    color: #111;
+}
+span.element-alert{
+    font-size: 1.4rem;
+    margin: auto;
+    color: #111;
+}
 .navbar .navbar-nav .nav-item .nav-link {
     color: #00438b;
     transition: 0.2s;
