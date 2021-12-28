@@ -58,6 +58,13 @@ nav.nav-transparent a, nav.hide-nav a{
     z-index: -1;
     opacity: 1;
 }
+.my-alert{
+    width: 50%;
+    align-items: center;
+    margin: -150px auto 0 ;
+    background-color: #e0edff;
+    border: 5px solid #cde4fd;
+}
 .navbar .navbar-brand, footer .left-side {
     font-weight: 600;
 }
@@ -86,6 +93,15 @@ nav.nav-transparent a, nav.hide-nav a{
 }
 section{
     padding-top: 6rem;
+}
+span{
+    font-size: 1.5rem;
+    color: #111;
+}
+span.element-alert{
+    font-size: 1.4rem;
+    margin: auto;
+    color: #111;
 }
 .jumbotron{
     width: 100%;
@@ -148,7 +164,7 @@ section{
     font-style: italic;
     font-size: larger;
 }
-#volunteer, #chart, footer{
+#volunteer, #chart, #info-kelulusan{
     background-color: #D2E7FE;
 }
 #course .card,#team .card{
@@ -524,6 +540,9 @@ footer .container .left-side .contact-us a img:hover{
         display: flex;
         flex-direction: column-reverse;
         text-align: center;
+    }
+    .my-alert{
+        width: 70%;
     }
     #testimoni .testi-container .profile {
         width: 60%;
