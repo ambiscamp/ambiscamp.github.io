@@ -16,7 +16,12 @@
       <h1 id="title"> Formulir Pendaftaran Tim Relawan</h1> 
       <p id="description">Ambis Camp</p>    
     </header>
-    
+
+    <div class="alert alert-dismissible fade show my-alert-max fixed-top" role="alert">
+      <span class="element-alert"></span>
+      <button type="button" class="btn-close"></button>
+    </div>
+
     <form id="survey-form" name="admin">
       <section class="data-diri">
         <h4 class="form"><b>Data diri</b></h4>
@@ -538,50 +543,6 @@
 
 <!-- JS  Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="../form.js"></script>
-  <script>
-      function checkControl(j) {
-          total = 1
-          let check = document.admin.jabatan
-          for (let i = 0; i < check.length; i++) {
-              if (check[i].checked) {
-                  total+=1
-              }
-          }
-          if (total > 2) {
-              alert("Eitss, maksimum piihan hanya 1 ya :)")
-              check[j-1].checked = false
-          }    
-          return false;
-      }
-  </script>
-  <!-- form submit -->
-  <script>
-    const rcW6ZMFYlz = 'https://script.google.com/macros/s/AKfycbxt3ZMtXCOuHzeIE2erIlgNK2smRv5rZBc8Ca_PqMcwhDeammabIuWBttmsSAQpUqac/exec'
-    const btnKirim = document.querySelector('.btn-kirim');
-    const btnLoading = document.querySelector('.btn-loading');
-    const myAlert = document.querySelector('.my-alert');
-    const formAdmin = document.forms['admin'];
-
-    formAdmin.addEventListener('submit', e => {
-        e.preventDefault()
-        // ketika submit di klik
-        // tampilkan tombol loading, hilangkan kirim
-        btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
-        fetch(rcW6ZMFYlz, { method: 'POST', body: new FormData(formAdmin)})
-        .then(response => {
-            // tampilkan tombol kirim, hilangkan loading
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-            // tampilkan alert
-            myAlert.classList.toggle('d-none');
-            // reset form
-            formAdmin.reset();
-            console.log('Success!', response)
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
