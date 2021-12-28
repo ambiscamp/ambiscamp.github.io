@@ -81,6 +81,22 @@ nav.nav-transparent a, nav.hide-nav a{
     padding: 0.5rem .8rem;
     transition: 0.3s;
 }
+.my-alert{
+    width: 50%;
+    align-items: center;
+    margin: -150px auto 0 ;
+    background-color: #e0edff;
+    border: 5px solid #cde4fd;
+}
+span{
+    font-size: 1.5rem;
+    color: #111;
+}
+span.element-alert{
+    font-size: 1.4rem;
+    margin: auto;
+    color: #111;
+}
 section{
     padding-top: 2rem;
 }
