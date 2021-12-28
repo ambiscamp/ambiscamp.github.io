@@ -43,6 +43,21 @@ body::before{
     background-repeat: no-repeat;
     background-position: center;
 }
+.my-alert-max{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    margin: -100px auto 0 ;
+    text-align: center;
+    background-color: lightpink;
+    border: 5px solid lightgray;
+}
+span.element-alert{
+    font-size: 1.2rem;
+    margin: auto;
+    color: #111;
+    font-weight: bold;
+}
 header #title{
     color: rgb(0, 0, 0);
     font-weight: 500;
