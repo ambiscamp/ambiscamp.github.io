@@ -183,6 +183,21 @@ section h4, .form .my-alert{
     text-align: center;
     background-color: lavender;
 }
+.my-alert-max{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    margin: -100px auto 0 ;
+    text-align: center;
+    background-color: lightpink;
+    border: 5px solid lightgray;
+}
+span.element-alert{
+    font-size: 1.2rem;
+    margin: auto;
+    color: #111;
+    font-weight: bold;
+}
 section.add-quest{
     margin-top: 40px;
 }
@@ -206,7 +221,7 @@ button.btn{
     display: block;
     width: 100%;
     cursor: pointer;
-    background-color: rgb(59, 247, 156);
+    background-color: #3bf79c;
     padding: 0.75rem;
     color: black;
     border-radius: 2px;
