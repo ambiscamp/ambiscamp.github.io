@@ -75,13 +75,19 @@
                         <a class="nav-link button active" href="#">Volunteer</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             More
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" name="Info Kelulusan" onclick="notAvailable()">Info Kelulusan</a></li>
-                            <li><a class="dropdown-item" target="_blank" href="https://drive.google.com/drive/u/0/folders/1SYIF81wqQAMvEyzRqg_O_faaU6hvz3fo">Rekap Materi</a></li>
-                            <li><a class="dropdown-item" target="_blank" href="https://bit.ly/RequestPodcastAC">Request Podcast</a></li>
+                            <li><a class="dropdown-item" name="Info Kelulusan" target="_blank"
+                                    href="https://docs.google.com/spreadsheets/d/1if7ryIIV8MIGSjygdfpFUQO3KjXHolgkz5-2UShFRIU/edit?usp=drivesdk">Info
+                                    Kelulusan</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://drive.google.com/drive/u/0/folders/1SYIF81wqQAMvEyzRqg_O_faaU6hvz3fo">Rekap
+                                    Materi</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://bit.ly/RequestPodcastAC">Request
+                                    Podcast</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -170,15 +176,14 @@
                     <h5>Keuntungan</h5>
                 </div>
             </div>
-            <div class="content-3-2 container-xxl mx-auto  position-relative" style="font-family: 'Poppins', sans-serif">
+            <div class="content-3-2 container-xxl mx-auto  position-relative"
+                style="font-family: 'Poppins', sans-serif">
                 <div class="d-flex flex-lg-row flex-column align-items-center">
                     <!-- Left Column -->
                     <div class="img-hero text-center justify-content-center d-flex">
-                        <img id="hero" class="img-fluid"
-                            src="../img/benefits.jpg"
-                            alt="" />
+                        <img id="hero" class="img-fluid" src="../img/benefits.jpg" alt="" />
                     </div>
-    
+
                     <!-- Right Column -->
                     <div
                         class="right-column d-flex flex-column align-items-lg-start align-items-center text-lg-start text-center">
@@ -594,49 +599,49 @@
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    AOS.init({
-        once: true,
-    });
+        AOS.init({
+            once: true,
+        });
     </script>
     <script type="text/javascript">
-    $('.slider-card-testi').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        adaptiveHeight: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false,
-        responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    infinite: true,
-                    dots: true,
-                    arrows: false,
+        $('.slider-card-testi').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false
+                    }
                 }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: false
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: false
-                }
-            }
-        ]
-    });
+            ]
+        });
     </script>
 </body>
 
