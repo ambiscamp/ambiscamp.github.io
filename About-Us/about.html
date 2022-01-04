@@ -75,13 +75,19 @@
                         <a class="nav-link" href="../Volunteer/volunteer.html">Volunteer</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             More
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" name="Info Kelulusan" onclick="notAvailable()">Info Kelulusan</a></li>
-                            <li><a class="dropdown-item" target="_blank" href="https://drive.google.com/drive/u/0/folders/1SYIF81wqQAMvEyzRqg_O_faaU6hvz3fo">Rekap Materi</a></li>
-                            <li><a class="dropdown-item" target="_blank" href="https://bit.ly/RequestPodcastAC">Request Podcast</a></li>
+                            <li><a class="dropdown-item" name="Info Kelulusan" target="_blank"
+                                    href="https://docs.google.com/spreadsheets/d/1if7ryIIV8MIGSjygdfpFUQO3KjXHolgkz5-2UShFRIU/edit?usp=drivesdk">Info
+                                    Kelulusan</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://drive.google.com/drive/u/0/folders/1SYIF81wqQAMvEyzRqg_O_faaU6hvz3fo">Rekap
+                                    Materi</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://bit.ly/RequestPodcastAC">Request
+                                    Podcast</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -167,8 +173,8 @@
                 </div>
             </div>
             <div class="team-container">
-                <div class="row justify-content-center mb-4 slider-card-team text-center container-card" data-aos="zoom-in-right"
-                    data-aos-duration="1000">
+                <div class="row justify-content-center mb-4 slider-card-team text-center container-card"
+                    data-aos="zoom-in-right" data-aos-duration="1000">
                     <div class="col-6">
                         <div class="card mb-3" style="max-width: 540px">
                             <div class="row g-0">
@@ -220,7 +226,8 @@
                                 <div class="col-md-8">
                                     <div class="card-body text-start">
                                         <h5 class="card-title center">Tutut Wilujeng</h5>
-                                        <p class="card-text center"><small class="text-muted center">Human Resources</small>
+                                        <p class="card-text center"><small class="text-muted center">Human
+                                                Resources</small>
                                         </p>
                                         <p class="card-text">Mengelola dan mengoptimalkan perencanaan sumber daya
                                             manusia, serta merekrut
@@ -240,7 +247,8 @@
                                 <div class="col-md-8">
                                     <div class="card-body text-start">
                                         <h5 class="card-title center">Edric Galentino</h5>
-                                        <p class="card-text center"><small class="text-muted center">Web Developer</small>
+                                        <p class="card-text center"><small class="text-muted center">Web
+                                                Developer</small>
                                         </p>
                                         <p class="card-text">Merancang, membuat, dan mengembangkan situs web untuk
                                             mempermudah para anggota
@@ -390,49 +398,49 @@
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    AOS.init({
-        once: true,
-    });
+        AOS.init({
+            once: true,
+        });
     </script>
     <script>
-    $('.slider-card-team').slick({
-        dots: true,
-        infinite: true,
-        speed: 1000,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        adaptiveHeight: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false,
-        responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    infinite: true,
-                    dots: true,
-                    arrows: false,
+        $('.slider-card-team').slick({
+            dots: true,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false
+                    }
                 }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: false
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: false
-                }
-            }
-        ]
-    });
+            ]
+        });
     </script>
 </body>
 
