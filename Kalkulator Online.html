@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <style>
+    /* Styling for calculator layout */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .calculator {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+    
+    button {
+      padding: 10px;
+      font-size: 24px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .result {
+      grid-column: 1 / span 4;
+      padding: 10px;
+      text-align: right;
+      font-size: 32px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="result"></div>
+    <button onclick="clearResult()">C</button>
+    <button onclick="appendSymbol('(')">(</button>
+    <button onclick="appendSymbol(')')">)</button>
+    <button onclick="divide()">/</button>
+    <button onclick="appendSymbol('7')">7</button>
+    <button onclick="appendSymbol('8')">8</button>
+    <button onclick="appendSymbol('9')">9</button>
+    <button onclick="multiply()">*</button>
+    <button onclick="appendSymbol('4')">4</button>
+    <button onclick="appendSymbol('5')">5</button>
+    <button onclick="appendSymbol('6')">6</button>
+    <button onclick="subtract()">-</button>
+    <button onclick="appendSymbol('1')">1</button>
+    <button onclick="appendSymbol('2')">2</button>
+    <button onclick="appendSymbol('3')">3</button>
+    <button onclick="add()">+</button>
+    <button onclick="appendSymbol('0')">0</button>
+    <button onclick="appendSymbol('.')">.</button>
+    <button onclick="calculate()">=</button>
+  </div>
+  
+  <script>
+    const resultEl = document.querySelector('.result');
+    let result = '0';
+    
+    function clearResult() {
+      result = '0';
+      renderResult();
+    }
+    
+    function appendSymbol(symbol) {
+      if (result === '0') {
+        result = symbol;
+      } else {
+        result += symbol;
+      }
+      renderResult();
+    }
+    
+    function add() {
+      result += '+';
+      renderResult();
+    }
+    
+    function subtract() {
+      result += '-';
+      renderResult();
+    }
+    
+    function multiply() {
+      result += '*';
+      renderResult();
+    }
+    
+    function divide() {
+      result += '/';
+      renderResult();
+    }
+    
+    function calculate() {
+      result = eval(result);
+      renderResult();
+    }
+    
+    function renderResult() {
+      resultEl.textContent = result;
+    }
+  </script>
+</body>
+</html>
